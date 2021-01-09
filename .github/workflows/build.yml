@@ -100,8 +100,8 @@ jobs:
           make install
 
           cd /tmp
-          git clone git://git.osmocom.org/gr-osmosdr
-          cd gr-osmosdr
+          git clone -b plutosdr https://github.com/csete/gr-osmosdr-gqrx.git
+          cd gr-osmosdr-gqrx
           mkdir build
           cd build
           cmake -DENABLE_PYTHON=FALSE ..
